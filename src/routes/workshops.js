@@ -23,4 +23,6 @@ router.delete('/:id', authenticate, authorize(["admin"]), deleteWorkshopById);
 router.get('/:id/topics', getTopicsByWorkshopId);
 router.post('/:id/topics', authenticate ,postTopicForWorkshopWithId);
 
+
+
 module.exports = router;
